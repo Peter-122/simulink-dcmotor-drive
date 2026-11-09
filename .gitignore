@@ -1,0 +1,11 @@
+# Simulink cache and autosave
+slprj/
+*.slxc
+*.autosave
+*.asv
+*.slx.r20*
+*.mexw64
+
+# OS files
+Thumbs.db
+.DS_Store

@@ -1,0 +1,16 @@
+dcmotor_pid v0.1 test report  |  09-Nov-2026 10:48:30  |  MATLAB 24.2.0.2712019 (R2024b)
+==============================================================================
+
+S1 nominal (200 rad/s, load at 1 s)
+  Check                           Value       Limit  Result
+  Overshoot [%]                  0.0000 <    5.0000  PASS
+  Settling time 2% [s]           0.0797 <    0.2000  PASS
+  Steady-state error [%]         0.0000 <    0.5000  PASS
+  Load speed dip [%]             2.9832 <    5.0000  PASS
+  Load recovery [s]              0.0490 <    0.2000  PASS
+  Peak voltage [V]              20.7139 <   24.0000  PASS
+
+==============================================================================
+OVERALL: PASS (6/6 checks)
+
+Plot saved: results/pid_plot.png

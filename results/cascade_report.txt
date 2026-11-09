@@ -1,0 +1,47 @@
+dcmotor_cascade v0.2 test report  |  09-Nov-2026 10:48:51  |  MATLAB 24.2.0.2712019 (R2024b)
+==============================================================================
+
+S1 nominal (200 rad/s, load at 1 s)
+  Check                           Value       Limit  Result
+  Overshoot [%]                  1.4180 <    5.0000  PASS
+  Settling time 2% [s]           0.0861 <    0.3000  PASS
+  Steady-state error [%]         0.0000 <    0.5000  PASS
+  Load speed dip [%]             1.9978 <    5.0000  PASS
+  Load recovery [s]              0.0000 <    0.2000  PASS
+  Peak current [A]               4.8936 <    5.2500  PASS
+  Peak voltage [V]              24.0000 <   24.0000  PASS
+
+S2 large step (450 rad/s)
+  Check                           Value       Limit  Result
+  Overshoot [%]                  0.8206 <    5.0000  PASS
+  Settling time 2% [s]           0.1921 <    0.3000  PASS
+  Steady-state error [%]         0.0000 <    0.5000  PASS
+  Load speed dip [%]             0.8879 <    5.0000  PASS
+  Load recovery [s]              0.0000 <    0.2000  PASS
+  Peak current [A]               4.8936 <    5.2500  PASS
+  Peak voltage [V]              24.0000 <   24.0000  PASS
+
+S3 heavy inertia (J x1.5)
+  Check                           Value       Limit  Result
+  Overshoot [%]                  1.7965 <    5.0000  PASS
+  Settling time 2% [s]           0.1274 <    0.3000  PASS
+  Steady-state error [%]         0.0000 <    0.5000  PASS
+  Load speed dip [%]             1.8547 <    5.0000  PASS
+  Load recovery [s]              0.0000 <    0.2000  PASS
+  Peak current [A]               4.9207 <    5.2500  PASS
+  Peak voltage [V]              24.0000 <   24.0000  PASS
+
+S4 light inertia (J x0.5)
+  Check                           Value       Limit  Result
+  Overshoot [%]                  0.7011 <    5.0000  PASS
+  Settling time 2% [s]           0.0442 <    0.3000  PASS
+  Steady-state error [%]         0.0000 <    0.5000  PASS
+  Load speed dip [%]             2.2373 <    5.0000  PASS
+  Load recovery [s]              0.0192 <    0.2000  PASS
+  Peak current [A]               4.8266 <    5.2500  PASS
+  Peak voltage [V]              24.0000 <   24.0000  PASS
+
+==============================================================================
+OVERALL: PASS (28/28 checks)
+
+Plot saved: results/cascade_plot.png

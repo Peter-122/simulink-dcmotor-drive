@@ -1,0 +1,67 @@
+dcmotor_drive v0.3 test report  |  09-Nov-2026 10:49:01  |  MATLAB 24.2.0.2712019 (R2024b)
+==============================================================================
+
+S1 nominal (200 rad/s, load at 1 s)
+  Check                           Value       Limit  Result
+  Overshoot [%]                  1.2347 <    5.0000  PASS
+  Settling after ramp [s]        0.0000 <    0.1000  PASS
+  Ramp tracking error [%]        1.2769 <    5.0000  PASS
+  Steady-state error [%]         0.0000 <    0.5000  PASS
+  Load speed dip [%]             1.9978 <    5.0000  PASS
+  Load recovery [s]              0.0000 <    0.2000  PASS
+  Peak current [A]               3.4417 <    5.2500  PASS
+  Peak voltage [V]              16.5000 <   24.0000  PASS
+  Time at voltage limit [s]      0.0000 <    0.0500  PASS
+  Voltage headroom [%]          54.0000 >    1.0000  PASS
+
+S2 high speed (450 rad/s)
+  Check                           Value       Limit  Result
+  Overshoot [%]                  0.2441 <    5.0000  PASS
+  Settling after ramp [s]        0.0000 <    0.1000  PASS
+  Ramp tracking error [%]        1.1007 <    5.0000  PASS
+  Steady-state error [%]         0.0000 <    0.5000  PASS
+  Load speed dip [%]             0.8879 <    5.0000  PASS
+  Load recovery [s]              0.0000 <    0.2000  PASS
+  Peak current [A]               3.4417 <    5.2500  PASS
+  Peak voltage [V]              24.0000 <   24.0000  PASS
+  Time at voltage limit [s]      0.0221 <    0.0500  PASS
+  Voltage headroom [%]           1.7083 >    1.0000  PASS
+
+S3 heavy inertia (J x1.5)
+  Check                           Value       Limit  Result
+  Overshoot [%]                  2.8943 <    5.0000  PASS
+  Settling after ramp [s]        0.0522 <    0.1000  PASS
+  Ramp tracking error [%]        2.9757 <    5.0000  PASS
+  Steady-state error [%]         0.0000 <    0.5000  PASS
+  Load speed dip [%]             1.8547 <    5.0000  PASS
+  Load recovery [s]              0.0000 <    0.2000  PASS
+  Peak current [A]               4.7754 <    5.2500  PASS
+  Peak voltage [V]              16.5000 <   24.0000  PASS
+  Time at voltage limit [s]      0.0000 <    0.0500  PASS
+  Voltage headroom [%]          54.0000 >    1.0000  PASS
+
+S4 light inertia (J x0.5)
+  Check                           Value       Limit  Result
+  Overshoot [%]                  1.0229 <    5.0000  PASS
+  Settling after ramp [s]        0.0376 <    0.1000  PASS
+  Ramp tracking error [%]        3.2392 <    5.0000  PASS
+  Steady-state error [%]         0.0000 <    0.5000  PASS
+  Load speed dip [%]             2.2373 <    5.0000  PASS
+  Load recovery [s]              0.0192 <    0.2000  PASS
+  Peak current [A]               3.0361 <    5.2500  PASS
+  Peak voltage [V]              16.5000 <   24.0000  PASS
+  Time at voltage limit [s]      0.0000 <    0.0500  PASS
+  Voltage headroom [%]          54.0000 >    1.0000  PASS
+
+==============================================================================
+OVERALL: PASS (40/40 checks)
+
+Load capability (steady state, Vmax = 24 V, Imax = 5 A)
+  Speed        Max load       Limited by
+  100 rad/s    0.2490 N*m     current
+  200 rad/s    0.2480 N*m     current
+  300 rad/s    0.2470 N*m     current
+  400 rad/s    0.1960 N*m     voltage
+  450 rad/s    0.0705 N*m     voltage
+
+Plot saved: results/drive_plot.png
